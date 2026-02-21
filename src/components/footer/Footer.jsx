@@ -5,6 +5,7 @@ function Footer() {
   const footerLinks = [
     { path: "/", name: "Home" },
     { path: "/shop", name: "Shop" },
+    { path: "/contact", name: "Contact Us" },
   ];
 
   return (

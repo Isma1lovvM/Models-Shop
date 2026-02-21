@@ -30,7 +30,7 @@ function Header() {
 
                   <NavLink to="/">
                     <h1 className="logoText">
-                      3legant<span className="gray">.</span>
+                      Khaem Modelverse<span className="gray">.</span>
                     </h1>
                   </NavLink>
                 </div>
@@ -50,6 +50,7 @@ function Header() {
                   {[
                     { path: "/", name: "Home" },
                     { path: "/shop", name: "Shop" },
+                    { path: "/contact", name: "Contact Us" },
                   ].map((item) => (
                     <li key={item.path}>
                       <NavLink

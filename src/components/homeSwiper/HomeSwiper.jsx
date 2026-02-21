@@ -6,9 +6,9 @@ import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 
-import swiperImg from "../../assets/swiper.svg";
+import swiperImg from "../../assets/swiper.png";
 import swiperImg2 from "../../assets/soft.png";
-import swiperImg3 from "../../assets/divan.jpg";
+import swiperImg3 from "../../assets/divan.png";
 import swiperBtn from "../../assets/button.svg";
 import swiperBtn2 from "../../assets/button2.svg";
 
