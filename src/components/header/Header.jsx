@@ -1,4 +1,4 @@
-import "header.css";
+import "./header.css";
 
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
@@ -14,81 +14,79 @@ function Header() {
 
   return (
     <>
-      <div className="container">
-        <header>
-          <div className="navBox">
-            <nav className="navbar">
-              <div className="container">
-                <div className="containerTexts">
-                  <div className="logoElBox">
-                    <button
-                      onClick={() => setIsMenuOpen(true)}
-                      className="bar"
-                      aria-label="Open menu"
-                    >
-                      <FaBars />
-                    </button>
+      <header>
+        <div className="navBox">
+          <nav className="navbar">
+            <div className="container">
+              <div className="containerTexts">
+                <div className="logoElBox">
+                  <button
+                    onClick={() => setIsMenuOpen(true)}
+                    className="bar"
+                    aria-label="Open menu"
+                  >
+                    <FaBars />
+                  </button>
 
-                    <NavLink to="/">
-                      <h1 className="logoText">
-                        3legant<span className="gray">.</span>
-                      </h1>
-                    </NavLink>
+                  <NavLink to="/">
+                    <h1 className="logoText">
+                      3legant<span className="gray">.</span>
+                    </h1>
+                  </NavLink>
+                </div>
+
+                <ul className={`navList ${isMenuOpen ? "menuActive" : ""}`}>
+                  <div className="barListBox">
+                    <h3>3legant</h3>
+                    <button
+                      className="closeMenuBtn"
+                      onClick={() => setIsMenuOpen(false)}
+                      aria-label="Close menu"
+                    >
+                      <IoCloseOutline />
+                    </button>
                   </div>
 
-                  <ul className={`navList ${isMenuOpen ? "menuActive" : ""}`}>
-                    <div className="barListBox">
-                      <h3>3legant</h3>
-                      <button
-                        className="closeMenuBtn"
+                  {[
+                    { path: "/", name: "Home" },
+                    { path: "/shop", name: "Shop" },
+                  ].map((item) => (
+                    <li key={item.path}>
+                      <NavLink
+                        to={item.path}
+                        className={({ isActive }) =>
+                          isActive ? "active" : "navLink"
+                        }
                         onClick={() => setIsMenuOpen(false)}
-                        aria-label="Close menu"
                       >
-                        <IoCloseOutline />
-                      </button>
-                    </div>
+                        {item.name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
 
-                    {[
-                      { path: "/", name: "Home" },
-                      { path: "/shop", name: "Shop" },
-                    ].map((item) => (
-                      <li key={item.path}>
-                        <NavLink
-                          to={item.path}
-                          className={({ isActive }) =>
-                            isActive ? "active" : "navLink"
-                          }
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {item.name}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
+                <ul className="navIconsList">
+                  <RiSearchLine className="icon" aria-label="Search" />
+                  <CgProfile className="icon" aria-label="Profile" />
+                  <img
+                    className="icon"
+                    src={cartBtn}
+                    alt="cart button"
+                    aria-label="Cart button"
+                  />
+                </ul>
 
-                  <ul className="navIconsList">
-                    <RiSearchLine className="icon" aria-label="Search" />
-                    <CgProfile className="icon" aria-label="Profile" />
-                    <img
-                      className="icon"
-                      src={cartBtn}
-                      alt="cart button"
-                      aria-label="Cart button"
-                    />
-                  </ul>
-
-                  {isMenuOpen && (
-                    <div
-                      className="overlay"
-                      onClick={() => setIsMenuOpen(false)}
-                    ></div>
-                  )}
-                </div>
+                {isMenuOpen && (
+                  <div
+                    className="overlay"
+                    onClick={() => setIsMenuOpen(false)}
+                  ></div>
+                )}
               </div>
-            </nav>
-          </div>
-        </header>
-      </div>
+            </div>
+          </nav>
+        </div>
+      </header>
     </>
   );
 }
