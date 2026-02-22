@@ -1,0 +1,43 @@
+.swiperBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-self: center;
+  width: 100%;
+  margin-bottom: 80px;
+  gap: 16px;
+  row-gap: 30px;
+}
+
+.mb {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1239px) {
+  .swiperBoxCart {
+    width: 32%;
+  }
+}
+
+@media (max-width: 840px) {
+  .swiperBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiperBoxCart {
+    width: 48%;
+  }
+}
+
+@media (max-width: 560px) {
+  .swiperBoxCart {
+    width: 90%;
+  }
+
+  .swiperCart {
+    background-color: white;
+    width: 100%;
+  }
+}
