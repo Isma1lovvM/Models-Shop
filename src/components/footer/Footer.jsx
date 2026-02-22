@@ -16,7 +16,7 @@ function Footer() {
             <div className="footerLogos">
               <NavLink to="/" className="black">
                 <h1 className="footerLogo">
-                  3legant<span className="gray">.</span>
+                  Khaem Modelverse.<span className="gray">.</span>
                 </h1>
               </NavLink>
               <span>Gift & Decoration Store</span>
