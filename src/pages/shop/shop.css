@@ -1,0 +1,45 @@
+.shopBox {
+  background-image: url("../../assets/shopBack.svg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px;
+  height: 440px;
+}
+
+.shopPage {
+  font-weight: 500;
+  font-size: 54px;
+  letter-spacing: -1px;
+  color: black;
+}
+
+.miniShopPage {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #121212;
+}
+
+.shopPageBtn {
+  width: 175px;
+  height: 45px;
+  gap: 8px;
+  padding: 6px 40px;
+  border-radius: 80px;
+  border: 1px solid #141718;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+  text-align: center;
+}
