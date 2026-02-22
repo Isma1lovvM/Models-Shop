@@ -83,16 +83,10 @@
   letter-spacing: -0.4px;
 }
 
-.productRight > p {
-  font-weight: 400;
-  font-size: 16px;
-  color: #6c7275;
-}
-
 .pt {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
-  color: rgb(71, 71, 71) !important;
+  color: rgb(34, 34, 34);
 }
 
 .productRight > span {
@@ -106,7 +100,7 @@
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -0.6px;
-  color: #121212;
+  color: #050505;
 }
 
 .productLeftBox {
@@ -142,17 +136,9 @@
   color: #6c7275;
 }
 
-.hourCart {
-  width: 60px;
-  height: 60px;
-  background-color: #f3f5f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 34px;
-  letter-spacing: -0.6px;
-  text-align: center;
-  color: #121212#141718;
+.descD {
+    font-weight: 700;
+    letter-spacing: 0.2;
+    line-height: 22px;
+    color: #4e4e4eec;
 }

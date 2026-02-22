@@ -56,7 +56,7 @@ function SinglePage() {
                 ) : (
                   <>
                     <h2>{data?.name}</h2>
-                    <p>{data?.description}</p>
+                    <p className="descD">{data?.description}</p>
                     <p className="pt">{data?.age} age</p>
                     <span>
                       <p className="wn">{data?.price}</p>
