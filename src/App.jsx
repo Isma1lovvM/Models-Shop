@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Footer from "./components/footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
+import SinglePage from "./pages/singlePage/SinglePage";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/singlepage/:id" element={<SinglePage />} />
       </Routes>
       <Footer />
     </>

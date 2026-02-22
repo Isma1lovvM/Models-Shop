@@ -1,0 +1,158 @@
+.productCenter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 20px;
+  flex-direction: column;
+  width: 48%;
+}
+
+.swiperImgs {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.swiperImgs > img {
+  width: 31%;
+  display: flex;
+  background-color: #f3f5f7;
+  height: 200px;
+  object-fit: contain;
+}
+
+.productLeft {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  /* height: 651px; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.productRightContainer {
+  margin-bottom: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 48%;
+  justify-content: flex-start;
+}
+
+.productRight {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e8ecef;
+  row-gap: 16px;
+  padding-bottom: 24px;
+  margin-bottom: auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.productRightTexts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 12px;
+  flex-direction: column;
+  padding: 24px 0;
+}
+
+.productTextsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.productRight > h2 {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.4px;
+}
+
+.productRight > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6c7275;
+}
+
+.pt {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(71, 71, 71) !important;
+}
+
+.productRight > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.wn {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  color: #121212;
+}
+
+.productLeftBox {
+  display: flex;
+  align-items: flex-start;
+  row-gap: 8px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.productLeftImg {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: auto;
+  max-height: 605px;
+}
+
+.singlePageButtons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.singlePageButtons button {
+  width: 200px;
+}
+
+.nw {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #6c7275;
+}
+
+.hourCart {
+  width: 60px;
+  height: 60px;
+  background-color: #f3f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #121212#141718;
+}
