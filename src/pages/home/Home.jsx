@@ -1,4 +1,4 @@
-import Desc from "../../components/desc/desc";
+import Desc from "../../components/desc/Desc";
 import HomeSwiper from "../../components/homeSwiper/HomeSwiper";
 import Models from "../../components/models/Models";
 
