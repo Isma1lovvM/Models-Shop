@@ -7,7 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { RiSearchLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
-import cartBtn from "../../assets/cartBtn.svg";
+import cartBtn from "../../assets/wishlist.svg";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -15,7 +15,7 @@ function Shop({ defaultVisible = 12 }) {
         <div className="shopBox">
           <h2 className="shopPage">Shop Page</h2>
           <p className="miniShopPage">
-            Let’s design the place you always imagined.
+            Browse our collection and choose the model you truly love.
           </p>
         </div>
         <Products visibleCount={visibleCount} onShowMore={handleShowMore} />

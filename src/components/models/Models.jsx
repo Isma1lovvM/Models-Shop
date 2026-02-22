@@ -9,7 +9,7 @@ function Models() {
     <>
       <div className="container">
         <div className="imgsBox">
-          <div className="cart1">
+          <div data-aos={"flip-left"} className="cart1">
             <div className="btns">
               <h3>Jenny Lopez</h3>
             </div>
@@ -17,14 +17,14 @@ function Models() {
           </div>
 
           <div className="twiceImgsBox">
-            <div className="cart2">
+            <div data-aos={"zoom-in-left"} className="cart2">
               <div className="btns2">
                 <h3>Emma Harlow</h3>
               </div>
               <img className="imgg" src={card2Img} alt="" />
             </div>
 
-            <div className="cart2">
+            <div data-aos={"zoom-in-left"} className="cart2">
               <div className="btns3">
                 <h3>Mateo Stive</h3>
               </div>
