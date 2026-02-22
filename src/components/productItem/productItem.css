@@ -1,0 +1,119 @@
+.swiperCart {
+  width: 100%;
+  padding: 10px 10px 80px 10px;
+  position: relative;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  overflow: hidden;
+
+  transition:
+    transform 0.7s ease,
+    box-shadow 0.35s ease;
+}
+
+.like {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: right 0.35s ease;
+  z-index: 10;
+}
+
+.swiperCart:hover .hoverBtn {
+  bottom: 20px;
+  transition: bottom 0.45s ease;
+}
+.swiperBoxCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  row-gap: 15px;
+  width: 24%;
+  flex-direction: column;
+}
+
+.swiperText {
+  display: flex;
+
+  margin-top: 5px;
+  align-items: flex-start;
+  row-gap: 3px;
+  justify-content: center;
+  width: 100%;
+  text-align: start;
+  color: #141718;
+  flex-direction: column;
+}
+
+.swiperSpan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hehe {
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hoverBtn {
+  width: 90%;
+  padding: 13px 20px;
+  border-radius: 8px;
+  bottom: -100%;
+  position: absolute;
+  background-color: #141718;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 16px 0px #00000009;
+}
+
+.line {
+  text-decoration: line-through;
+  color: #6c7275;
+}
+
+.imgsSaleBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 8px;
+  flex-direction: column;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+.flex {
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  position: relative;
+  width: 100%;
+}
+
+.swiperCart:hover .like {
+  right: 0;
+  transition: 0.35s;
+}
