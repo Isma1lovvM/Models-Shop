@@ -2,7 +2,7 @@ import "./products.css";
 
 import { useState, useEffect } from "react";
 import { getProducts } from "../../api/cardsApi";
-import ProductItem from "../ProductItem/ProductItem"; // to‘g‘ri yo‘lni tekshir
+import ProductItem from "../productItem/ProductItem";
 
 function Products({ visibleCount, onShowMore }) {
   const [productsData, setProductsData] = useState([]);
