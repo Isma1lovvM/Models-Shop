@@ -1,31 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Tint&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Tint&family=IBM+Plex+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Rubik+Glitch&display=swap");
 
-.navBox {
-  width: 1260px;
-  max-width: 95%;
-  margin: 10px auto 0;
-  padding-bottom: 80px;
-  position: relative;
+/* =====================
+   BASE HEADER
+===================== */
+header {
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 80px;
 }
 
 .navbar {
-  width: 1260px;
+  width: 95%;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 17px 25px;
   position: fixed;
   top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.741);
-  backdrop-filter: blur(10px);
-  border-radius: 70px;
-  box-shadow: 0px 0px 4px 2px #e7e7e7b4;
-  transition: top 0.1s ease;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  border-radius: 70px;
+  box-shadow: 0 0 4px 2px #e7e7e7b4;
+  transition: all 0.3s ease;
 }
 
+/* =====================
+   FLEX LAYOUT
+===================== */
 .containerTexts {
   display: flex;
   align-items: center;
@@ -33,272 +36,147 @@
   width: 100%;
 }
 
-.navbar.topZero {
-  top: 0;
-}
-
-header {
-  width: 100%;
-  z-index: 1000;
-  background-color: white;
-}
-
-.navBox.zero {
-  padding-bottom: 73px;
+.logoElBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .logoText {
+  font-family: "Rubik Glitch", system-ui;
   font-weight: 300;
-  font-family: "Rubik Glitch", system-ui; 
   font-size: 24px;
-  text-align: center;
 }
 
 .gray {
-  font-weight: 500;
   color: #6c7275;
+  font-weight: 500;
 }
 
-.grayy {
-  font-weight: 500;
-  color: #6c7275;
-  margin: 0 5px;
-}
-
+/* =====================
+   NAV LINKS
+===================== */
 .navList {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+  transition: 0.3s ease;
+  z-index: 1001;
 }
 
 .navLink {
   font-weight: 500;
   font-size: 15px;
   color: #6c7275;
+  transition: color 0.2s ease;
 }
 
 .active {
-  font-weight: 500;
-  font-size: 15px;
   color: black;
 }
 
-.active1 {
-  font-weight: 500;
-  font-size: 15px;
-  color: #38cb89;
-}
-
+/* =====================
+   ICONS + MENU BUTTON
+===================== */
 .navIconsList {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 18px;
 }
 
 .icon {
   font-size: 20px;
   width: 20px;
-}
-
-.black {
-  color: black;
-}
-
-.subHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px 20px;
-  z-index: 1000;
-  background-color: #f3f5f7;
-}
-
-.subHeaderTexts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: content;
-  gap: 15px;
-  text-align: center;
-}
-
-.subHeaderTicket {
-  font-size: 22px;
-}
-
-.subHeaderTexts > p {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  color: #343839;
-}
-
-.subBtn {
-  background-color: transparent;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #377dff;
-  border-bottom: 1px solid #377dff;
+  color: #000;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.subHeaderCloseBox {
-  background-color: transparent;
+.bar,
+.closeMenuBtn {
+  background: transparent;
   border: none;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #000;
   cursor: pointer;
+  margin-left: 10px;
+  display: none;
+  font-size: 24px;
+  height: 24px;
 }
 
-.logoElBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 8px;
+.closeMenuBtn {
+  font-size: 26px;
 }
 
+/* =====================
+   OVERLAY
+===================== */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #aaa2;
+  background-color: #0002;
   backdrop-filter: blur(3px);
   z-index: 998;
 }
 
-.bar {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  height: 31.4px;
-  cursor: pointer;
-  display: none;
-}
-
-.closeMenuBtn {
-  background: transparent;
-  border: none;
-  font-size: 26px;
-  align-self: flex-end;
-  cursor: pointer;
-  display: none;
-}
-
+/* =====================
+   MOBILE MENU HEADER
+===================== */
 .barListBox {
   display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .barListBox > h3 {
   font-weight: 500;
   font-size: 16px;
-  text-align: center;
-  color: #000000;
-  display: none;
+  color: #000;
 }
 
-.cartDropdown {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  width: 300px;
-  max-height: 400px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  z-index: 1000;
-}
-
-.cartItem {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.cartItemImg {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.cartItemInfo p {
-  margin: 0;
-  font-size: 14px;
-}
-
-@media (max-width: 750px) {
-  .navList {
-    gap: 22px;
-  }
-
-  .navIconsList {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 650px) {
-  .navBox.zero {
-    padding-bottom: 55px;
-  }
-
-  .navList {
-    width: 88%;
-    height: 100%;
-    background-color: white;
-    transition: 0.4s;
-    top: 0;
-    left: -100%;
-    position: fixed;
-    z-index: 999;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-    justify-self: flex-start;
-    justify-content: flex-start;
-    display: flex;
-    padding: 24px;
-    gap: 30px;
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  /* Navbar base adjustments */
+  .navbar {
+    width: 95%;
+    padding: 12px 15px;
+    top: 5px;
   }
 
   .logoText {
     font-size: 20px;
   }
 
-  .bar {
-    height: 25px;
-    font-size: 20px;
-  }
-
-  /* .navLink {
-    border-bottom: 1px solid #e8ecef;
-  } */
-
-  .navbar {
-    padding: 12px 10px;
+  /* Hide desktop links */
+  .navList {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 24px;
+    gap: 30px;
+    transition: 0.4s ease;
+    z-index: 1001;
   }
 
   .navList.menuActive {
-    left: 0;
-    top: 0;
+    right: 0;
+  }
+
+  .barListBox {
+    display: flex;
   }
 
   .bar,
@@ -306,66 +184,30 @@ header {
     display: block;
   }
 
-  .barListBox > h3 {
-    display: block;
-  }
-
-  .barListBox {
-    display: flex;
-    justify-self: center;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navBox {
-    padding-bottom: 98px;
+  .navIconsList {
+    gap: 12px;
   }
 }
 
-@media (max-width: 450px) {
-  .navBox.zero {
-    padding-bottom: 50px;
-  }
-
-  .subHeader {
-    padding: 5px 10px;
-  }
-
-  .subHeaderTexts {
-    gap: 12px;
-  }
-
+@media (max-width: 480px) {
   .navbar {
+    width: 95%;
     padding: 10px 8px;
-    top: 32px;
-  }
-
-  .navBox {
-    padding-bottom: 83px;
-  }
-
-  .bar {
-    height: 26px;
-    font-size: 20px;
   }
 
   .logoText {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .icon {
     font-size: 17px;
-    width: 17px;
-    height: 17px;
   }
 
-  .subHeaderTicket {
-    font-size: 17px;
+  .bar {
+    font-size: 20px;
   }
 
-  .subHeaderTexts > p,
-  .subBtn {
-    font-size: 11px;
+  .navList {
+    width: 100%;
   }
 }

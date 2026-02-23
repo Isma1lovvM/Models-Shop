@@ -17,7 +17,11 @@ function Models() {
           </div>
 
           <div className="twiceImgsBox">
-            <div data-aos={"zoom-in-left"} className="cart2">
+            <div
+              data-aos={"zoom-in-left"}
+              data-aos-duration="1200"
+              className="cart2"
+            >
               <div className="btns2">
                 <h3>Emma Harlow</h3>
               </div>

@@ -1,5 +1,4 @@
 import "./products.css";
-
 import { useState, useEffect } from "react";
 import { getProducts } from "../../api/cardsApi";
 import ProductItem from "../productItem/ProductItem";
@@ -29,24 +28,22 @@ function Products({ visibleCount, onShowMore }) {
   const canShowMore = onShowMore && visibleCount < productsData.length;
 
   return (
-    <div className="container">
-      <div className={`swiperBox ${canShowMore ? "" : "mb"}`}>
-        {visibleProducts.map((product, index) => (
-          <ProductItem
-            key={product.id}
-            title={product.name}
-            price={product.price}
-            id={product.id}
-            image={product.image}
-            index={index}
-          />
-        ))}
-        {canShowMore && (
-          <button className="shopPageBtn" onClick={onShowMore}>
-            Show More
-          </button>
-        )}
-      </div>
+    <div className={`swiperBox ${canShowMore ? "" : "mb"}`}>
+      {visibleProducts.map((product, index) => (
+        <ProductItem
+          key={product.id}
+          title={product.name}
+          price={product.price}
+          id={product.id}
+          image={product.image}
+          index={index}
+        />
+      ))}
+      {canShowMore && (
+        <button className="shopPageBtn" onClick={onShowMore}>
+          Show More
+        </button>
+      )}
     </div>
   );
 }

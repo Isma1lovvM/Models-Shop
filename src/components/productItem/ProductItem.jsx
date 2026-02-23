@@ -4,25 +4,9 @@ import like from "../../assets/like.svg";
 import { NavLink } from "react-router-dom";
 
 function ProductItem({ id, image, price, title, index }) {
-  const animations = [
-    "flip-left",
-    "flip-left",
-    "flip-right",
-    "flip-right",
-    "fade-right",
-    "fade-right",
-    "fade-left",
-    "fade-left",
-    "fade-up-right",
-    "fade-up-right",
-    "fade-up-left",
-    "fade-up-left",
-  ];
-  const chosenAnimation = animations[index % animations.length];
-
   return (
     <>
-      <div className="swiperBoxCart" data-aos={chosenAnimation}>
+      <div className="swiperBoxCart" data-aos="flip-left">
         <NavLink style={{ width: "100%" }} to={`/singlePage/${id}`}>
           <div className="swiperCart">
             <div className="flex">

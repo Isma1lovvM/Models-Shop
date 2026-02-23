@@ -11,14 +11,13 @@
   border-radius: 5px;
   border: 1px solid #c4c4c4;
   overflow: hidden;
-}
-
-.swiperCart:hover {
-  box-shadow: 0px 0px 8px 1px #c4c4c495;
   transition:
     transform 0.7s ease,
     box-shadow 0.35s ease;
-    /* border: none; */
+}
+
+.swiperCart:hover {
+  box-shadow: 0px 0px 5px 3px #e7e7e7b4;
 }
 
 .like {
@@ -32,15 +31,32 @@
   z-index: 10;
 }
 
-.swiperCart:hover .hoverBtn {
-  bottom: 20px;
+.swiperCart:hover .like {
+  right: 0;
+}
+
+.hoverBtn {
+  width: 90%;
+  padding: 13px 20px;
+  border-radius: 8px;
+  bottom: -100%;
+  position: absolute;
+  background-color: #141718;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 16px 0px #00000009;
   transition: bottom 0.45s ease;
 }
+
+.swiperCart:hover .hoverBtn {
+  bottom: 20px;
+}
+
 .swiperBoxCart {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: auto;
+  margin-bottom: 20px;
   row-gap: 15px;
   width: 24%;
   flex-direction: column;
@@ -48,7 +64,6 @@
 
 .swiperText {
   display: flex;
-
   margin-top: 5px;
   align-items: flex-start;
   row-gap: 3px;
@@ -82,18 +97,6 @@
   font-size: 16px;
 }
 
-.hoverBtn {
-  width: 90%;
-  padding: 13px 20px;
-  border-radius: 8px;
-  bottom: -100%;
-  position: absolute;
-  background-color: #141718;
-  color: white;
-  border: none;
-  box-shadow: 0px 8px 16px 0px #00000009;
-}
-
 .line {
   text-decoration: line-through;
   color: #6c7275;
@@ -117,7 +120,36 @@
   width: 100%;
 }
 
-.swiperCart:hover .like {
-  right: 0;
-  transition: 0.35s;
+/* Responsive media queries */
+@media (max-width: 1239px) {
+  .swiperBoxCart {
+    width: 32%;
+  }
+}
+
+@media (max-width: 840px) {
+  .swiperBoxCart {
+    width: 48%;
+  }
+  .swiperCart {
+    height: 350px;
+  }
+  .like {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .swiperBoxCart {
+    width: 100%;
+  }
+  .swiperCart {
+    height: 300px;
+    padding-bottom: 60px;
+  }
+  .hoverBtn {
+    width: 95%;
+    padding: 10px 15px;
+  }
 }

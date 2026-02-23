@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 function CardsModels() {
   return (
     <>
-      <section className="section">
-        <div className="container">
+      <div className="container">
+        <div className="cardsModelsBox">
           <div className="topBox">
             <h2 className="topText">Models</h2>
 
@@ -21,7 +21,7 @@ function CardsModels() {
 
           <Products visibleCount={12} />
         </div>
-      </section>
+      </div>
     </>
   );
 }

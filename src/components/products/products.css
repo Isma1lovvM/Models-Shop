@@ -1,9 +1,8 @@
 .swiperBox {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-self: center;
   width: 100%;
   margin-bottom: 80px;
   gap: 16px;
@@ -14,30 +13,17 @@
   margin-bottom: 80px;
 }
 
-@media (max-width: 1239px) {
-  .swiperBoxCart {
-    width: 32%;
-  }
+.shopPageBtn {
+  padding: 10px 20px;
+  background-color: #141718;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-@media (max-width: 840px) {
-  .swiperBox {
-    display: flex;
-    align-items: center;
-  }
-
-  .swiperBoxCart {
-    width: 48%;
-  }
-}
-
-@media (max-width: 560px) {
-  .swiperBoxCart {
-    width: 90%;
-  }
-
-  .swiperCart {
-    background-color: white;
-    width: 100%;
-  }
+.shopPageBtn:hover {
+  background-color: #333;
 }

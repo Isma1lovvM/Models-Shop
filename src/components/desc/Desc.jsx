@@ -11,7 +11,7 @@ function Desc() {
               data-aos="fade-up"
               data-aos-anchor-placement="bottom-bottom"
             >
-              Simple Models<span className="grayy">&</span>
+              Simple Models<span className="gray">&</span>
               <br className="br" />
               Best Models<span className="gray">.</span>
             </h2>

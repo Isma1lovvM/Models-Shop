@@ -1,7 +1,16 @@
+.cardsModelsBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .topBox {
   display: flex;
   align-items: center;
   padding: 48px 0;
+  width: 95%;
   justify-content: space-between;
 }
 
